@@ -1,5 +1,5 @@
 import sys
-from GameHierarchy import Division, Season, Tournament
+from GameHierarchy import Division, Season, Team, Tournament
 
 
 def main():
@@ -17,6 +17,12 @@ def main():
                                   dates="June 18-25, 2016", location="London, England", points_cap=15, time_cap=100,
                                   division="None Open", age="None", gender="Open", teams=[], games=[])
     print(none_open_wuc_2016)
+
+    none_open_wuc_AUS_men_2016 = Team(season="None Open 2016", tournament="World Ultimate Championships 2016",
+                                      dates="June 18-25, 2016", location="London, England", points_cap=15, time_cap=100,
+                                      division="None Open", age="None", gender="Open", teams=[], games=[], group="AUS",
+                                      team="Men", captains=[], coaches=[], players=[])
+    print(none_open_wuc_AUS_men_2016)
 
 if __name__ == "__main__":
     sys.exit(main())

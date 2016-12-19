@@ -55,7 +55,7 @@ class Tournament(Season):
 
 
     def __str__(self):
-        return "{}, {}".format(self.season, self.tournament)
+        return "\n{}, {}".format(self.season, self.tournament)
 
 
 class Division(Tournament):
@@ -77,7 +77,7 @@ class Division(Tournament):
         print("\nDivision.__init_() called.")
 
     def __str__(self):
-        return "{}: {}".format(self.tournament, self.division)
+        return "\n{}: {}".format(self.tournament, self.division)
 
     def extract_games(self):
         """Loop through each team in the division and extract the games."""
@@ -87,3 +87,42 @@ class Division(Tournament):
                 game for game in team.games if game.score0 > game.score1
             ] for team in self.teams
         ]
+
+
+class Group(object):
+    """Group of teams."""
+
+    def __init__(self, **kwargs):
+        """"""
+
+        self.group = kwargs.get("group")
+
+        print("\nGroup.__init__() called.")
+
+    def __str__(self):
+        return "\n{}".format(self.group)
+
+
+class Team(Group):
+    """Team."""
+
+    def __init__(self, **kwargs):
+        """"""
+
+        self.group = kwargs.get("group")
+        self.team = kwargs.get("team")
+        self.division = kwargs.get("division")
+        self.age = kwargs.get("age")
+        self.gender = kwargs.get("gender")
+        self.captains = kwargs.get("captains")
+        self.coaches = kwargs.get("coaches")
+        self.players = kwargs.get("players")
+        self.games = kwargs.get("games")
+
+        super(Team, self).__init__(**kwargs)
+
+        print("\nTeam.__init_() called.")
+
+    def __str__(self):
+        return "\n{} {} {}".format(self.group, self.team, self.division)
+
