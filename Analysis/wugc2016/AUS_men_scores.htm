@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'><head>
+		<meta http-equiv="Content-Style-Type" content="text/css"/>
+		<meta http-equiv="Content-Script-Type" content="text/javascript"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="Expires" content="-1"/><link rel='icon' type='image/png' href='cust/wugc16/favicon.png' />
+		<title>Ultiorganizer - Schedule AUS Men</title>
+		<link rel="stylesheet" href="cust/wugc16/layout.css" type="text/css" />
+		<link rel="stylesheet" href="cust/wugc16/font.css" type="text/css" />
+		<link rel="stylesheet" href="cust/wugc16/default.css" type="text/css" />
+<script type="text/javascript">
+<!--
+function checkAll(field)
+	{
+	var form = document.getElementById(field);
+		 
+		for (var i=1; i < form.elements.length; i++) 
+		{
+		 form.elements[i].checked = !form.elements[i].checked;
+		}
+	}
+
+function setId(id) 
+	{
+	var input = document.getElementById("hiddenDeleteId");
+	input.value = id;
+	}
+
+function changeseason(id){
+	var url = location.href;
+	
+	var param = "selseason";
+	var re = new RegExp("([?|&])" + param + "=.*?(&|$)","i");
+    if (url.match(re)){
+        url=url.replace(re,'$1' + param + "=" + id + '$2');
+    }else{
+        
+		if(location.href.search("view=") !=-1){
+			url = url + '&' + param + "=" + id;
+		}else{
+			url = url.substring(0,url.lastIndexOf('/'));
+			url = url + "/index.php?"+ param + "=" + id; 
+		}
+	}
+	location.href=url;
+}
+
+
+//-->
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65064451-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33909883-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head><body style='overflow-y:scroll;' >
+<div class='page'>
+<div class='page_top'>
+<div class='top_banner_space'></div>
+<form action='?view=games&amp;team=25&amp;singleview=1' method='post'><table border='0' cellpadding='0' cellspacing='0' style='width:100%;white-space: nowrap;'><tr>
+<td class='topheader_left'>
+<a href='http://www.wfdf.org' class='header_text'><img class='header_logo' style='width:400px;height:50px' src='cust/wugc16/logo.jpg' alt='WFDF'/></a><br/>
+</td><td class='topheader_right'><table border='0' cellpadding='0' cellspacing='0' style='width:95%;white-space: nowrap;'>
+<tr>
+<td class='right' style='padding-top:5px'>&nbsp;</td></tr>
+</table></td></tr></table></form>
+</div>
+<div class='navigation_bar'><p class='navigation_bar_text'><span style='color: grey;'>Nav. History: </span><a href='?view=teamcard&amp;team=25&amp;goindex=1'>AUS Men</a> &mdash;  Schedule AUS Men</p></div><div class='page_middle'>
+<table style='border:1px solid #fff;background-color: #ffffff;'><tr><td class='menu_left'><table class='leftmenulinks'>
+<tr><td class='menuseasonlevel'><a class='seasonnav' style='text-align:center;' href='?view=teams&season=WUGC16&amp;list=bystandings'>WUGC-2016</a></td></tr>
+<tr><td><a class='nav' href='?view=games&amp;season=WUGC16&amp;filter=tournaments&amp;group=all'>Games</a></td></tr>
+<tr><td><a class='nav' href='?view=teams&amp;season=WUGC16&amp;list=allteams'>Teams</a></td></tr>
+<tr><td class='menuseparator'></td></tr>
+<tr><td class='menuserieslevel'><a class='subnav' href='?view=seriesstatus&amp;series=6'>Guts</a></td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=98'>&raquo; Pool A</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=116'>&raquo; Playoff (1-8)</a>
+</td></tr>
+<tr><td class='menupoollevel'><a class='navpoollink' href='?view=spiritstatus&amp;series=6'>Spirit Scores</a></td></tr>
+<tr><td class='menuserieslevel'><a class='subnav' href='?view=seriesstatus&amp;series=3'>Men</a></td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=1'>&raquo; Pool A</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=2'>&raquo; Pool B</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=3'>&raquo; Pool C</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=4'>&raquo; Pool D</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=5'>&raquo; Pool E</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=6'>&raquo; Pool F</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=7'>&raquo; Pool G</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=8'>&raquo; Pool H</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=27'>&raquo; Pool J</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=28'>&raquo; Pool K</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=29'>&raquo; Pool L</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=30'>&raquo; Pool M</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=31'>&raquo; Pool N</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=32'>&raquo; Pool P</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=33'>&raquo; Pool Q</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=34'>&raquo; Pool R</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=70'>&raquo; Crossovers</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=71'>&raquo; Playoff (1-8)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=72'>&raquo; Playoff (9-16)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=73'>&raquo; Playoff (17-24)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=107'>&raquo; Finals (25-30)</a>
+</td></tr>
+<tr><td class='menupoollevel'><a class='navpoollink' href='?view=spiritstatus&amp;series=3'>Spirit Scores</a></td></tr>
+<tr><td class='menuserieslevel'><a class='subnav' href='?view=seriesstatus&amp;series=4'>Women</a></td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=9'>&raquo; Pool A</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=10'>&raquo; Pool B</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=11'>&raquo; Pool C</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=12'>&raquo; Pool D</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=59'>&raquo; Crossovers</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=64'>&raquo; Playoff (1-8)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=65'>&raquo; Playoff (9-16)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=110'>&raquo; Playoff (17-18)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=111'>&raquo; Playoff (19-22)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=63'>&raquo; Pool G (23-26)</a>
+</td></tr>
+<tr><td class='menupoollevel'><a class='navpoollink' href='?view=spiritstatus&amp;series=4'>Spirit Scores</a></td></tr>
+<tr><td class='menuserieslevel'><a class='subnav' href='?view=seriesstatus&amp;series=2'>Mixed</a></td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=13'>&raquo; Pool A</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=14'>&raquo; Pool B</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=15'>&raquo; Pool C</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=16'>&raquo; Pool D</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=17'>&raquo; Pool E</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=18'>&raquo; Pool F</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=19'>&raquo; Pool G</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=20'>&raquo; Pool H</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=35'>&raquo; Pool J</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=36'>&raquo; Pool K</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=37'>&raquo; Pool L</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=38'>&raquo; Pool M</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=39'>&raquo; Pool N</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=40'>&raquo; Pool P</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=41'>&raquo; Pool Q</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=42'>&raquo; Pool R</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=52'>&raquo; Crossovers</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=53'>&raquo; Playoff (1-8)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=54'>&raquo; Playoff (9-16)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=55'>&raquo; Playoff (17-24)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=58'>&raquo; Finals (25-30)</a>
+</td></tr>
+<tr><td class='menupoollevel'><a class='navpoollink' href='?view=spiritstatus&amp;series=2'>Spirit Scores</a></td></tr>
+<tr><td class='menuserieslevel'><a class='subnav' href='?view=seriesstatus&amp;series=1'>Master Men</a></td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=21'>&raquo; Pool A</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=22'>&raquo; Pool B</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=23'>&raquo; Pool C</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=24'>&raquo; Pool D</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=43'>&raquo; Pool E</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=44'>&raquo; Pool F</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=45'>&raquo; Pool G</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=46'>&raquo; Pool H</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=108'>&raquo; Playoff (1-4)</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=115'>&raquo; Playoff (5-8)</a>
+</td></tr>
+<tr><td class='menupoollevel'><a class='navpoollink' href='?view=spiritstatus&amp;series=1'>Spirit Scores</a></td></tr>
+<tr><td class='menuserieslevel'><a class='subnav' href='?view=seriesstatus&amp;series=5'>Master Women</a></td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=25'>&raquo; Pool A</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=26'>&raquo; Pool B</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=47'>&raquo; Pool C</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=48'>&raquo; Pool D</a>
+</td></tr>
+<tr><td class='menupoollevel'>
+<a class='navpoollink' href='?view=poolstatus&amp;pool=49'>&raquo; Playoff (1-4)</a>
+</td></tr>
+<tr><td class='menupoollevel'><a class='navpoollink' href='?view=spiritstatus&amp;series=5'>Spirit Scores</a></td></tr>
+</table>
+<table class='leftmenulinks'>
+<tr><td class='menuseasonlevel'>Event Links</td></tr>
+<tr><td></td></tr>
+<tr><td><a class='subnav' style='background: url(./images/linkicons/feed_14x14.png) no-repeat 0 50%; padding: 0 0 0 19px;' href='./ext/rss.php?feed=all'>Result Feed</a>
+</td></tr>
+</table>
+<table class='leftmenulinks'>
+<tr><td class='menuseasonlevel'>Statistics</td></tr>
+<tr><td><a class='subnav' href="?view=seasonlist">&raquo; Events</a>
+<a class='subnav' href="?view=allplayers">&raquo; Players</a>
+<a class='subnav' href="?view=allteams">&raquo; Teams</a>
+<a class='subnav' href="?view=allclubs">&raquo; Clubs</a>
+<a class='subnav' href="?view=allcountries">&raquo; Countries</a>
+<a class='subnav' href="?view=statistics&amp;list=teamstandings">&raquo; All time</a></td></tr>
+</table><table class='leftmenulinks'>
+<tr><td class='menuseasonlevel'>Links</td></tr>
+<tr><td><a class='subnav' href='https://sourceforge.net/apps/trac/ultiorganizer/'>&raquo; Powered by Ultiorganizer</a>
+</td></tr>
+</table><table style='width:90%'>
+<tr><td class='guides'><a href='?view=user_guide'>User Guide</a> | 
+<a href='?view=privacy'>Privacy Policy</a>
+</td></tr></table></td>
+
+<td align='left' valign='top' class='tdcontent'><div class='content'>
+
+<!-- res:Sunday pool:7 date:19.6.-->
+<h1>Sunday</h1>
+<h3>Sun 19.6.2016 <a href='?view=reservationinfo&amp;reservation=1'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Pool G</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>15:30</span></td>
+<td style='width:45px;'><span>Field 1</span></td>
+<td style='width:80px;text-align:right;'><span>AUS Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>9</span></td>
+<td style='width:85px;'><span>COL Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=36'>Game play</a></span></td>
+</tr>
+
+<!-- res:Monday pool:7 date:20.6.-->
+</table>
+<hr/>
+<h1>Monday</h1>
+<h3>Mon 20.6.2016 <a href='?view=reservationinfo&amp;reservation=46'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Pool G</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>11:30</span></td>
+<td style='width:45px;'><span>Field 19</span></td>
+<td style='width:80px;text-align:right;'><span>AUS Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>7</span></td>
+<td style='width:85px;'><span>ESP Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=35'>Game play</a></span></td>
+</tr>
+
+<!-- res:Monday pool:7 date:20.6.-->
+<tr style='width:100%'>
+<td style='width:35px;'><span>17:30</span></td>
+<td style='width:45px;'><span>Field 14</span></td>
+<td style='width:80px;text-align:right;'><span>AUS Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>7</span></td>
+<td style='width:85px;'><span>ISR Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=34'>Game play</a></span></td>
+</tr>
+
+<!-- res:Tuesday pool:27 date:21.6.-->
+</table>
+<hr/>
+<h1>Tuesday</h1>
+<h3>Tue 21.6.2016 <a href='?view=reservationinfo&amp;reservation=57'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Pool J</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>11:30</span></td>
+<td style='width:45px;'><span>Field 3</span></td>
+<td style='width:80px;text-align:right;'><span>RSA Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>2</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:85px;'><span>AUS Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=49'>Game play</a></span></td>
+</tr>
+
+<!-- res:Tuesday pool:27 date:21.6.-->
+<tr style='width:100%'>
+<td style='width:35px;'><span>15:30</span></td>
+<td style='width:45px;'><span>Field 3</span></td>
+<td style='width:80px;text-align:right;'><span>AUS Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>7</span></td>
+<td style='width:85px;'><span>CZE Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=50'>Game play</a></span></td>
+</tr>
+
+<!-- res:Wednesday pool:27 date:22.6.-->
+</table>
+<hr/>
+<h1>Wednesday</h1>
+<h3>Wed 22.6.2016 <a href='?view=reservationinfo&amp;reservation=83'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Pool J</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>09:30</span></td>
+<td style='width:45px;'><span>Field 2</span></td>
+<td style='width:80px;text-align:right;'><span>USA Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>8</span></td>
+<td style='width:85px;'><span>AUS Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=48'>Game play</a></span></td>
+</tr>
+
+<!-- res:Wednesday pool:70 date:22.6.-->
+</table>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Crossovers</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>15:30</span></td>
+<td style='width:45px;'><span>Field 17</span></td>
+<td style='width:80px;text-align:right;'><span>AUS Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>12</span></td>
+<td style='width:85px;'><span>IRL Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=137'>Game play</a></span></td>
+</tr>
+
+<!-- res:Thursday pool:71 date:23.6.-->
+</table>
+<hr/>
+<h1>Thursday</h1>
+<h3>Thu 23.6.2016 <a href='?view=reservationinfo&amp;reservation=112'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Playoff (1-8)</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>11:30</span></td>
+<td style='width:45px;'><span>Field 4</span></td>
+<td style='width:80px;text-align:right;'><span>GBR Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>11</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:85px;'><span>AUS Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=93'>Game play</a></span></td>
+</tr>
+
+<!-- res:Friday pool:77 date:24.6.-->
+</table>
+<hr/>
+<h1>Friday</h1>
+<h3>Fri 24.6.2016 <a href='?view=reservationinfo&amp;reservation=136'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Playoff (1-8) Semifinals</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>15:30</span></td>
+<td style='width:45px;'><span>Field 1</span></td>
+<td style='width:80px;text-align:right;'><span>AUS Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>9</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:85px;'><span>JPN Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=96'>Game play</a></span></td>
+</tr>
+
+<!-- res:Saturday pool:78 date:25.6.-->
+</table>
+<hr/>
+<h1>Saturday</h1>
+<h3>Sat 25.6.2016 <a href='?view=reservationinfo&amp;reservation=163'></a></h3>
+<table cellpadding='2' border='0' cellspacing='0'>
+<tr style='width:100%'>
+<th align='left' colspan='12'>Men Playoff (1-8) Finals</th>
+</tr>
+<tr style='width:100%'>
+<td style='width:35px;'><span>09:00</span></td>
+<td style='width:45px;'><span>Field 1</span></td>
+<td style='width:80px;text-align:right;'><span>CAN Men</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>10</span></td>
+<td style='width:5px;text-align:center'><span>-</span></td>
+<td style='width:16px;text-align:center;;font-weight:bold'><span>15</span></td>
+<td style='width:85px;'><span>AUS Men</span></td>
+<td style='width:50px;'></td>
+<td style='width:30px;;white-space: nowrap;'></td>
+<td class='right' style='width:75px;'><span>&nbsp;<a href='?view=gameplay&amp;game=100'>Game play</a></span></td>
+</tr>
+</table>
+<p class='timezone'>Timezone: Europe/London. Local time: 11.11.2016 21:05</p><hr/>
+<p><a href='?view=ical&amp;team=25&amp;time=all&amp;order=tournaments'>iCalendar (.ical)</a> | <a href='?view=games&amp;team=25&filter=onepage&group=all'>Grid (PDF)</a> | <a href='?view=games&amp;team=25&filter=season&group=all'>List (PDF)</a> | <a href='?view=games&amp;team=25&amp;singleview=1&amp;print=1'>Printable version</a></p>
+
+</div></td></tr></table></div>
+<div class='page_bottom'></div></div></body></html>
