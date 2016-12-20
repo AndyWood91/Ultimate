@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2acdbc9f-f5ca-4766-bd4a-dfeb96294f75" name="Default" comment="" />
+    <list default="true" id="2acdbc9f-f5ca-4766-bd4a-dfeb96294f75" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py" afterPath="$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,29 +17,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tournament_scraping.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tournament_scraping.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="466" column="26" lean-forward="false" selection-start-line="466" selection-start-column="26" selection-end-line="466" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="467" column="34" lean-forward="true" selection-start-line="467" selection-start-column="34" selection-end-line="467" selection-end-column="34" />
               <folding>
-                <element signature="e#311#579#0" expanded="false" />
-                <element signature="e#612#1060#0" expanded="false" />
-                <element signature="e#1098#2601#0" expanded="false" />
-                <element signature="e#2643#6861#0" expanded="false" />
-                <element signature="e#6910#9274#0" expanded="false" />
-                <element signature="e#9350#10614#0" expanded="false" />
-                <element signature="e#10690#13538#0" expanded="false" />
-                <element signature="e#13587#13778#0" expanded="false" />
+                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#333#601#0" expanded="false" />
+                <element signature="e#634#1082#0" expanded="false" />
+                <element signature="e#1120#2623#0" expanded="false" />
+                <element signature="e#2665#6883#0" expanded="false" />
+                <element signature="e#6932#9296#0" expanded="false" />
+                <element signature="e#9372#10636#0" expanded="false" />
+                <element signature="e#10712#13560#0" expanded="false" />
+                <element signature="e#13609#13800#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameHierarchy.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameHierarchy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/GameHierarchy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="195">
               <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
               <folding />
             </state>
@@ -76,9 +79,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py" />
         <option value="$PROJECT_DIR$/Analysis/wugc2016/wuc2016_analysis.py" />
         <option value="$PROJECT_DIR$/Analysis/wugc2016/GameHierarchy.py" />
+        <option value="$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py" />
       </list>
     </option>
   </component>
@@ -184,19 +187,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py">
+    <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/wuc2016_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="466" column="26" lean-forward="false" selection-start-line="466" selection-start-column="26" selection-end-line="466" selection-end-column="26" />
+        <state relative-caret-position="360">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
-            <element signature="e#311#579#0" expanded="false" />
-            <element signature="e#612#1060#0" expanded="false" />
-            <element signature="e#1098#2601#0" expanded="false" />
-            <element signature="e#2643#6861#0" expanded="false" />
-            <element signature="e#6910#9274#0" expanded="false" />
-            <element signature="e#9350#10614#0" expanded="false" />
-            <element signature="e#10690#13538#0" expanded="false" />
-            <element signature="e#13587#13778#0" expanded="false" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -211,21 +207,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/wuc2016_analysis.py">
+    <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/GameHierarchy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/GameHierarchy.py">
+    <entry file="file://$PROJECT_DIR$/Analysis/wugc2016/tournament_scraping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="467" column="34" lean-forward="true" selection-start-line="467" selection-start-column="34" selection-end-line="467" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#333#601#0" expanded="false" />
+            <element signature="e#634#1082#0" expanded="false" />
+            <element signature="e#1120#2623#0" expanded="false" />
+            <element signature="e#2665#6883#0" expanded="false" />
+            <element signature="e#6932#9296#0" expanded="false" />
+            <element signature="e#9372#10636#0" expanded="false" />
+            <element signature="e#10712#13560#0" expanded="false" />
+            <element signature="e#13609#13800#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

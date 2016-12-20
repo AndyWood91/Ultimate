@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup, NavigableString, Comment
-import analysis_machine
+# import analysis_machine
+import GameHierarchy
 import sys
 import pickle
 import re
@@ -8,7 +9,7 @@ import re
 
 # global variables
 URL_CHUNK = "http://scores.wugc2016.com/"  # gets appended to various urls
-TESTING = False  # for debugging
+TESTING = True  # for debugging
 
 
 def find_divisions(soup):
@@ -457,84 +458,17 @@ def main(scrape):
             teams_games_data = division_teams_games_data[2]
             # print(teams_games_data)
 
-            division_object = analysis_machine.Division(
-                tournament=tournament_name,
-                url=tournament_url,
-                date_range=tournament_date_range,
-                location=tournament_location,
-                points_cap=tournament_points_cap,
-                time_cap=tournament_time_cap,
-                divisions=["{} {}".format(division[0], division[1]) for division in division_names],
-                age=division_age,
-                gender=division_gender,
-                teams=[analysis_machine.Team(
-                    group=team[0][:3],
-                    team=team[0][4:],
-                    coaches=team[1][0][0][-1].split(", "),
-                    captains=team[1][0][-1][-1].split(", "),
-                    players=[
-                        analysis_machine.Player(
-                            group=team[0][3:],
-                            team=team[4:],
-                            number=player[0][0],
-                            player=player[0][1]
-                        ).append_statistics([player[1], player[2], player[3]]) for player in team[1][-1]
-                    ]
-                ).append_games(
-                    [analysis_machine.Game(
-                        date=game[0][0],
-                        stage=game[0][1],
-                        time=game[0][2],
-                        field=game[0][3],
-                        team0=next((team for team in division_object.teams if team.group == game[0][4][:3]), None),
-                        team1=next((team for team in division_object.teams if team.group == game[0][6][:3]), None),
-                        age=division_age,
-                        gender=division_gender,
-                        teams=division_object.teams,
-                        divisions=division_object.divisions,
-                        tournament=tournament_name,
-                        url=tournament_url,
-                        date_range=tournament_date_range,
-                        location=tournament_location,
-                        points_cap=tournament_points_cap,
-                        time_cap=tournament_time_cap
-                    ).append_points(
-                        [analysis_machine.Point(
-                            date=game[0][0],
-                            stage=game[0][1],
-                            time=game[0][2],
-                            field=game[0][3],
-                            team0=next((team for team in division_object.teams if team.group == game[0][4][:3]), None),
-                            team1=next((team for team in division_object.teams if team.group == game[0][6][:3]), None),
-                            age=division_age,
-                            gender=division_gender,
-                            teams=division_object.teams,
-                            divisions=division_object.divisions,
-                            tournament=tournament_name,
-                            url=tournament_url,
-                            date_range=tournament_date_range,
-                            location=tournament_location,
-                            points_cap=tournament_points_cap,
-                            time_cap=tournament_time_cap,
-                            start=point[5][0],
-                            pull="",
-                            score0_initial=point[1],
-                            score1_initial=point[3]
-                        ).append_possessions([analysis_machine.Possession(
-                            team=possession[0]
-                        ).append_stalls(
-                            [analysis_machine.Stall(
-                                team=possession[0],
-                                player=stall[1]
-                            ).append_sequence(
-                                stall[2], stall[3]
-                            ) for stall in possession[1]]
-                        ) for possession in point[4]]).append_finish(point[5][1]) for point in game[1][2]]
-                    ) for game in team[2]]
-                ) for team in teams_games_data]
-            ).extract_games()
-
+            division_object = GameHierarchy.Division(season="WUC 2016", season_start="18 June, 2015",
+                                                     season_finish="25 June, 2016", age="None", gender="Open",
+                                                     tournaments=[], tournament="WUC 2016",
+                                                     tournament_start="18 June, 2016",
+                                                     tournament_finish="25 June, 2016", location="London, England",
+                                                     points_cap=15, time_cap=100, divisions=[], division="None Open",
+                                                     teams=[])
             print(division_object)
+
+            for team in teams_games_data:
+                pass
 
             # TODO: need to retake data and see if this will create the division
         #
